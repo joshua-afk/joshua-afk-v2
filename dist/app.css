@@ -219,7 +219,7 @@ nav {
   margin: 0 2rem;
 }
 
-.project-right-variant .project-details,
+.project-right-variant .project-details
 .project-right-variant .project-buttons-container {
   order: 1;
 }
