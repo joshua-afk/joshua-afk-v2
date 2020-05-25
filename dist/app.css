@@ -190,11 +190,38 @@ nav {
   position: relative;
 }
 
-#moreTools { display: flex; }
+#more_tools {
+  display: none;
+}
 
 .tools-icon-container {
   flex-basis: 50%;
   margin-bottom: 1.5rem;
+}
+
+#show_more_tools_container,
+#hide_more_tools_container {
+  margin: 0 auto;
+}
+
+#show_more_tools_container a,
+#hide_more_tools_container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#show_more_tools_container a:after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f078";
+  padding-left: 0.5rem;
+  font-weight: 900;
+}
+
+#hide_more_tools_container a:after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f077";
+  padding-left: 0.5rem;
+  font-weight: 900;
 }
 
 .tools-icon {
@@ -501,6 +528,8 @@ nav {
 
   .tools-icon-container { flex-basis: 25%; }
 
+  #more_tools { display: none; }
+
   .tools-icon figure {
     width: 160px;
     height: 160px;
@@ -544,7 +573,11 @@ nav {
 
   .tools-icon-container { margin-bottom: 2rem; }
 
-  #moreTools { display: none; }
+  #more_tools { display: flex; }
+
+  #show_more_tools_container {
+    display: none;
+  }
 
   .tools-icon figure {
     width: 205px;
