@@ -190,6 +190,8 @@ nav {
   position: relative;
 }
 
+#moreTools { display: flex; }
+
 .tools-icon-container {
   flex-basis: 50%;
   margin-bottom: 1.5rem;
@@ -433,7 +435,12 @@ nav {
 
   .container { max-width: 540px; }
 
-  .tools-icon-container { flex-basis: 33.33%; }
+  .tools-icon-container { flex-basis: 25%; }
+
+  .tools-icon figure {
+    width: 120px;
+    height: 120px;
+  }
 
   .d-sm-none { display: none; }
   .d-sm-flex { display: flex; }
@@ -492,11 +499,11 @@ nav {
     display: block;
   }
 
-  .tools-icon-container { margin-bottom: 2rem; }
+  .tools-icon-container { flex-basis: 25%; }
 
   .tools-icon figure {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
   }
 
   .project-sm-left-variant .project-description { padding-right: 10rem; }
@@ -535,7 +542,9 @@ nav {
 
   .about-member h4 { font-size: 22px; }
 
-  .tools-icon-container { flex-basis: 25%; }
+  .tools-icon-container { margin-bottom: 2rem; }
+
+  #moreTools { display: none; }
 
   .tools-icon figure {
     width: 205px;
