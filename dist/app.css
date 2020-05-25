@@ -135,6 +135,10 @@ nav {
   margin-bottom: 4rem;
 }
 
+
+/* .about-members { */
+/* } */
+
 .about-member {
   display: flex;
   flex-basis: 50%;
@@ -469,9 +473,17 @@ nav {
     flex-basis: 33.33%;
   }
 
-  .member-ui-designer { order: 1; }
-  .member-project-manager { order: 2; }
-  .member-developer { order: 3; }
+  .about-members li:nth-child(1) {
+    order: 1;
+  }
+
+  .about-members li:nth-child(2) {
+    order: 3;
+  }
+
+  .about-members li:nth-child(4) {
+    order: 2;
+  }
 
   .hero-buttons { top: 55vh; }
 
