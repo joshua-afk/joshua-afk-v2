@@ -135,9 +135,10 @@ nav {
   margin-bottom: 4rem;
 }
 
-
-/* .about-members { */
-/* } */
+.about-members li:nth-child(1),
+.about-members li:nth-child(2) {
+  margin-bottom: 2rem;
+}
 
 .about-member {
   display: flex;
@@ -145,7 +146,6 @@ nav {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem;
  }
 
 .about-member figure {
@@ -157,7 +157,6 @@ nav {
   border-radius: 50%;
  }
 
-
  .about-member h4 {
    margin-bottom: 0.5rem;
    font-weight: 600;
@@ -167,6 +166,7 @@ nav {
  }
 
 .about-member p {
+  display: none;
   text-align: center;
   color: #CBD5E0;
 }
@@ -192,7 +192,7 @@ nav {
 
 .tools-icon-container {
   flex-basis: 50%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tools-icon {
@@ -206,8 +206,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   overflow: hidden;
   background-color: white;
 }
@@ -469,8 +469,11 @@ nav {
     width: 7px;
   }
 
+  .hero-buttons { top: 55vh; }
+
   .about-member {
     flex-basis: 33.33%;
+    margin-bottom: 2rem;
   }
 
   .about-members li:nth-child(1) {
@@ -485,7 +488,9 @@ nav {
     order: 2;
   }
 
-  .hero-buttons { top: 55vh; }
+  .about-member p {
+    display: block;
+  }
 
   .tools-icon-container { margin-bottom: 2rem; }
 
