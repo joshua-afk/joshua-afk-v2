@@ -65,9 +65,12 @@ nav {
   top: 70px;
 }
 
-.nav-icon {
-  margin-left: 2rem;
+.nav-icon-container {
   flex-grow: 1;
+}
+
+.nav-icon {
+  margin-left: 1rem;
   font-weight: 800;
   font-size: 1.4rem;
   color: #ffffff;
@@ -75,7 +78,7 @@ nav {
 }
 
 .nav-hamburger {
-  margin-right: 2rem;
+  margin-right: 1rem;
   font-size: 1.6rem;
 }
 
