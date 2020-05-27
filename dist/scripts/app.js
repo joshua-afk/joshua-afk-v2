@@ -47,7 +47,7 @@ nav_menu_open.addEventListener('click', function(event) {
     nav_menu_close.style.display = "block";
 
     nav_icon_white.style.display = "none";
-    nav_icon_black.style.display = "block";
+    nav_icon_black.style.display = "initial";
 
     nav_icon.style.color = "#000000";
 
@@ -61,7 +61,7 @@ nav_menu_close.addEventListener('click', function(event) {
     nav_menu_open.style.display = "block";
     nav_menu_close.style.display = "none";
 
-    nav_icon_white.style.display = "block";
+    nav_icon_white.style.display = "initial";
     nav_icon_black.style.display = "none";
 
     nav.style.position = "absolute";
