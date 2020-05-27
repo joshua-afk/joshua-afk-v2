@@ -704,3 +704,7 @@ nav {
   .d-xl-flex { display: flex; }
   .d-xl-block { display: block; }
 }
+
+@media (min-width: 1522px) {
+
+}
