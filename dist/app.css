@@ -55,7 +55,7 @@ ul {
 }
 
 a:hover {
-  color: #CBD5E0;
+  color: #f65252;
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
@@ -78,8 +78,14 @@ nav {
   margin-left: 1rem;
   font-weight: 800;
   font-size: 1.4rem;
-  color: #ffffff;
   text-decoration: none;
+  transition: .2s ease-in-out;
+}
+
+#nav_icon_white { color: #ffffff; }
+#nav_icon_black {
+  display: none;
+  color: #000000;
 }
 
 .nav-hamburger {
@@ -87,9 +93,21 @@ nav {
   font-size: 1.6rem;
 }
 
-#nav_menu_open,
-#nav_menu_close {
+#nav_menu_open {
   color: #ffffff;
+  transition: .2s ease-in-out;
+}
+
+#nav_menu_close {
+  color: #000000;
+  transition: .2s ease-in-out;
+}
+
+#nav_icon_black:hover,
+#nav_icon_white:hover,
+#nav_menu_open:hover,
+#nav_menu_close:hover {
+  color: #f65252;
 }
 
 #nav_menu {
@@ -97,7 +115,7 @@ nav {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: #000000;
+  background-color: #f5efe2;
   top: 0;
   left: 0;
   z-index: 2;
@@ -121,14 +139,17 @@ nav {
 #nav_menu ul li a {
 	font-size: 5rem;
 	font-weight: bold;
-	color: white;
+	color: #000000;
 	text-decoration: none;
   border-bottom: 5px solid transparent;
   transition: 500ms;
   letter-spacing: 8px;
 }
 
-#nav_menu ul li a:hover { border-color: #ffffff; }
+#nav_menu ul li a:hover {
+  color: #f65252; 
+  border-color: #f65252;
+}
 
 /* ===HERO=== */
 .hero-header,
