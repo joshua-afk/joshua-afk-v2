@@ -28,17 +28,24 @@
 </head>
 <body>
   <!-- nav/header -->
-  <nav class="container">
+  <nav class="container" id="nav">
     <span class="nav-icon-container">
       <a href="https://joshua-afk.github.io/joshua-afk-v2/" class="nav-icon">JOSHUA-AFK</a>
     </span>
 
     <span class="nav-hamburger">
-      <i class="fas fa-bars"></i>
+      <a href="#" id="nav_menu_open"><i class="fas fa-bars"></i></a>
+      <a href="#" id="nav_menu_close" class="d-none"><i class="fas fa-times"></i></a>
     </span>
   </nav>
 
-  <div class="nav-menu"></div>
+  <div id="nav_menu">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+  </div>
 
   <!-- hero -->
   <section class="hero" id="particles-js">
@@ -210,127 +217,127 @@
             <!-- <div class="tools-overlay"></div> -->
           </div>
         </li>
-
-        <div class="tools-icon-wrapper" id="more_tools">
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/angular-js.png" alt="angular logo" style="height: 100%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/react-js.png" alt="react logo" style="height: 100%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/vue-js.png" alt="vue logo" style="height: 70%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/wordpress.png" alt="wordpress logo" style="height: 80%;"></img>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/mysql.svg" alt="mysql logo" style="height: 70%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/package-manager.png" alt="package manager logo" style="height: 70%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/cli.png" alt="cli logo" style="height: 80%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/github.png" alt="github logo" style="height: 70%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/neovim.webp" style="height: 100%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/adobe-xd.png" alt="adobe xd logo" style="height: 70%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-
-          <li class="tools-icon-container">
-            <div class="tools-icon">
-              <figure>
-                <img src="images/tools/adobe-photoshop.png" alt="photoshop logo" style="height: 80%;"/>
-              </figure>
-
-              <!-- <div class="tools-overlay"></div> -->
-            </div>
-          </li>
-        </div>
-
-        <div id="show_more_tools_container">
-          <a href="#" id="show_more_tools">show more</a>
-        </div>
-
-        <div id="hide_more_tools_container" class="d-none">
-          <a href="#" id="hide_more_tools">hide tools</a>
-        </div>
       </ul>
+
+      <ul class="tools-icon-wrapper" id="more_tools">
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/angular-js.png" alt="angular logo" style="height: 100%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/react-js.png" alt="react logo" style="height: 100%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/vue-js.png" alt="vue logo" style="height: 70%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/wordpress.png" alt="wordpress logo" style="height: 80%;"></img>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/mysql.svg" alt="mysql logo" style="height: 70%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/package-manager.png" alt="package manager logo" style="height: 70%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/cli.png" alt="cli logo" style="height: 80%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/github.png" alt="github logo" style="height: 70%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/neovim.webp" alt="neovim logo" style="height: 100%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/adobe-xd.png" alt="adobe xd logo" style="height: 70%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+
+        <li class="tools-icon-container">
+          <div class="tools-icon">
+            <figure>
+              <img src="images/tools/adobe-photoshop.png" alt="photoshop logo" style="height: 80%;"/>
+            </figure>
+
+            <!-- <div class="tools-overlay"></div> -->
+          </div>
+        </li>
+      </ul>
+
+      <div id="show_more_tools_container">
+        <a href="#" id="show_more_tools">show more</a>
+      </div>
+
+      <div id="hide_more_tools_container" class="d-none">
+        <a href="#" id="hide_more_tools">hide tools</a>
+      </div>
     </div>
   </section>
 
