@@ -33,7 +33,7 @@ var nav_menu_open  = document.getElementById('nav_menu_open');
 var nav_menu_close = document.getElementById('nav_menu_close'); 
 
 nav_menu_open.addEventListener('mouseover', function(event) {
-    if(window.innerWidth <= 1200){
+    if(window.innerWidth < 1200){
         nav_menu.style.clipPath = "circle(25% at 100% 4%)";
     } else if(window.innerWidth <= 1522){
         nav_menu.style.clipPath = "circle(30% at 100% -10%)";
@@ -54,8 +54,6 @@ nav_menu_open.addEventListener('click', function(event) {
 
     nav_icon_white.style.display = "none";
     nav_icon_black.style.display = "initial";
-
-    nav_icon.style.color = "#000000";
 
     nav.style.position = "fixed";
     nav_menu.style.clipPath = "circle(100%)";
