@@ -33,7 +33,13 @@ var nav_menu_open  = document.getElementById('nav_menu_open');
 var nav_menu_close = document.getElementById('nav_menu_close'); 
 
 nav_menu_open.addEventListener('mouseover', function(event) {
-    nav_menu.style.clipPath = "circle(20% at 100% 0%)";
+    if(window.innerWidth <= 1200){
+        nav_menu.style.clipPath = "circle(25% at 100% 4%)";
+    } else if(window.innerWidth <= 1522){
+        nav_menu.style.clipPath = "circle(30% at 100% -10%)";
+    } else {
+        nav_menu.style.clipPath = "circle(50% at 100% -30%)";
+    }
 });
 
 nav_menu_open.addEventListener('mouseout', function(event) {
@@ -65,7 +71,7 @@ nav_menu_close.addEventListener('click', function(event) {
     nav_icon_black.style.display = "none";
 
     nav.style.position = "absolute";
-    nav_menustyle.clipPath = "circle(0% at 100% 0%)";
+    nav_menu.style.clipPath = "circle(0% at 100% 0%)";
 });
 
 nav_menu_close.addEventListener('mouseover', function(event) {
