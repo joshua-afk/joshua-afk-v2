@@ -1,9 +1,30 @@
+// Variables
+var nav            = document.getElementById('nav'); 
+var nav_menu       = document.getElementById('nav_menu'); 
+var nav_icon_white = document.getElementById('nav_icon_white'); 
+var nav_icon_black = document.getElementById('nav_icon_black'); 
+var nav_menu_open  = document.getElementById('nav_menu_open'); 
+var nav_menu_close = document.getElementById('nav_menu_close'); 
+
 // Custom Scripts
 document.addEventListener("DOMContentLoaded", function() {
     // AOS
     AOS.init({
         once: true
     });
+
+});
+
+window.addEventListener("scroll", function(event) {
+    if (this.scrollY < 100) {
+        nav.classList.add("nav-transparent")
+        nav.classList.remove("nav-white")
+        console.log('less than 100vh');
+    } else {
+        nav.classList.add("nav-white")
+        nav.classList.remove("nav-transparent")
+        console.log('greater than 100vh');
+    }
 });
 
 // Tools
@@ -23,14 +44,6 @@ document.getElementById('hide_more_tools').addEventListener('click', function(ev
     document.getElementById('more_tools').style.height = "75px";
 });
 
-
-// Nav Menu
-var nav            = document.getElementById('nav'); 
-var nav_menu       = document.getElementById('nav_menu'); 
-var nav_icon_white = document.getElementById('nav_icon_white'); 
-var nav_icon_black = document.getElementById('nav_icon_black'); 
-var nav_menu_open  = document.getElementById('nav_menu_open'); 
-var nav_menu_close = document.getElementById('nav_menu_close'); 
 
 nav_menu_open.addEventListener('mouseover', function(event) {
     if(window.innerWidth < 1200){
@@ -75,3 +88,4 @@ nav_menu_close.addEventListener('click', function(event) {
 nav_menu_close.addEventListener('mouseover', function(event) {
     nav_menu.style.clipPath = "circle(100%)";
 });
+

@@ -26,14 +26,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
 
   <!-- stylesheets -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
   <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" type="text/css" media="all" rel="stylesheet" id="fontawesome-css" >
-  <link href="app.css" rel="stylesheet"></link>
+  <link href="styles/app.css" rel="stylesheet"></link>
 </head>
 <body>
 
   <!-- nav/header -->
-  <nav class="container" id="nav">
+  <nav class="nav-transparent" id="nav">
     <span class="nav-icon-container">
       <a href="https://joshua-afk.github.io/joshua-afk-v2/" class="nav-icon" id="nav_icon_white">JOSHUA-AFK</a>
       <a href="https://joshua-afk.github.io/joshua-afk-v2/" class="nav-icon" id="nav_icon_black">JOSHUA-AFK</a>
@@ -55,22 +55,24 @@
 
   <!-- hero -->
   <section class="hero" id="particles-js">
-    <header class="hero-header">
-      <h1 class="custom-header">Hello, I'm <span class="semi-bold">Joshua Ryan Velasquez</span>.</h1>
-      <h1 class="custom-header">I'm a <span class="cstm-text-type semi-bold" data-wait="3000" data-words='["Developer.", "Designer.", "Vimmer.", "Mortal."]'></span></h1>
-    </header>
+    <div id="hero_container">
+      <header class="hero-header">
+        <h1 class="custom-header">Hello, I'm <span class="semi-bold">Joshua Ryan Velasquez</span>.</h1>
+        <h1 class="custom-header">I'm a <span class="cstm-text-type semi-bold" data-wait="3000" data-words='["Developer.", "Designer.", "Vimmer.", "Mortal."]'></span></h1>
+      </header>
 
-    <div class="hero-buttons">
-      <a href="#portfolio" class="btn-black-outline">PORTFOLIO</a>
-      <a href="#contact" class="btn-black-outline">CONTACTS</a>
-    </div>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn-black-outline">PORTFOLIO</a>
+        <a href="#contact" class="btn-black-outline">CONTACTS</a>
+      </div>
 
-    <div class="hero-special-button">
-      <a href="#about" aria-label="about">
-        <div class="hero-special-button-outline">
-          <div class="hero-special-button-inner"></div>
-        </div>
-      </a>
+      <div class="hero-special-button">
+        <a href="#about" aria-label="about">
+          <div class="hero-special-button-outline">
+            <div class="hero-special-button-inner"></div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -371,7 +373,7 @@
           </div>
 
           <figure class="project-image-container">
-            <img src="" alt="construct ph website hero" />
+            <img class="project-image" src="images/portfolio/construct-ph.png" alt="construct ph website hero"/>
           </figure>
         </div>
       </article>
@@ -391,7 +393,7 @@
           </div>
 
           <figure class="project-image-container">
-            <img src="" alt="flowershop website hero" />
+            <img class="project-image" src="images/portfolio/flower-shop.png" alt="flowershop website hero" />
           </figure>
         </div>
       </article>
@@ -407,7 +409,7 @@
         </div>
 
         <figure class="project-image-container">
-          <img src="" />
+          <img class="project-image" src="images/portfolio/construct-ph.png" alt="construct ph website hero"/>
         </figure>
 
         <div class="project-links-container">
@@ -425,7 +427,7 @@
         </div>
 
         <figure class="project-image-container">
-          <img src="" />
+          <img class="project-image" src="images/portfolio/flower-shop.png" alt="flowershop website hero" />
         </figure>
 
         <div class="project-links-container">
@@ -461,7 +463,7 @@
 
   <script src="vendors/particles.js-master/particles.min.js"></script>
   <script src="vendors/particles.js-master/demo/js/app.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" defer="" '=""></script>
   <script src="scripts/typewriter-effect.js"></script>
   <script src="scripts/app.js"></script>

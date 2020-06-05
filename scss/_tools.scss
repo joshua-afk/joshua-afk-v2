@@ -1,0 +1,87 @@
+.tools-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#more_tools {
+  display: flex;
+  height: 75px;
+  /* max-height: 1105px; */
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+.tools-icon-container {
+  flex-basis: 50%;
+  margin-bottom: 1.5rem;
+  transition: .3s ease-in-out;
+}
+
+#show_more_tools_container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#show_more_tools_container,
+#hide_more_tools_container {
+  justify-content: center;
+}
+
+#show_more_tools_container a,
+#hide_more_tools_container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#show_more_tools_container a:after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f078";
+  padding-left: 0.5rem;
+  font-weight: 900;
+}
+
+#hide_more_tools_container a:after {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f077";
+  padding-left: 0.5rem;
+  font-weight: 900;
+}
+
+.tools-icon {
+  justify-content: center;
+  display: flex;
+}
+
+.tools-icon figure {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tools-overlay {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  top: 0;
+  width: 255px;
+  height: 255px;
+  background-color: #0a0a0a;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.tools-overlay:hover {
+  opacity: 0;
+}
+
+/* .tools-icon figure:hover + .tools-overlay { */
+/*   opacity: 0; */
+/* } */
+

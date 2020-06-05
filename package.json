@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "compile:style": "sass --watch scss/app.scss dist/styles/app.css"
   },
   "repository": {
     "type": "git",
