@@ -62,7 +62,14 @@
   width: 160px;
   height: 160px;
   overflow: hidden;
-  background-color: white;
+  background-color: #ffffff;
+  filter: grayscale(100%) sepia(20%) blur(1px);
+  transition: filter  0.3s ease-in-out;
+}
+
+
+.tools-icon figure:hover {
+  filter: grayscale(0%) sepia(0%) blur(0px);
 }
 
 .tools-overlay {

@@ -376,7 +376,7 @@ nav {
 
 .project-number {
   margin-bottom: 1.5rem;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 800;
 }
 
@@ -394,7 +394,7 @@ nav {
 .project-title {
   margin-bottom: 0.8rem;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
 }
 
@@ -575,11 +575,11 @@ footer .nav-icon:hover {
 /* ===CUSTOM=== */
 .custom-header {
   line-height: 1.4;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .section-header {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
