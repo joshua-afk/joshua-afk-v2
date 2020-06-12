@@ -43,6 +43,7 @@ ul {
 
 a:hover {
   color: #f65252;
+  transition: 0.25s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -437,7 +438,6 @@ nav {
 
 .project-image-container {
   width: 800px;
-  height: 400px;
   margin-top: 1.5rem;
   overflow: hidden;
 }
@@ -494,7 +494,7 @@ nav {
   text-decoration: none;
   color: white;
   margin-right: 1.3rem;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   font-weight: 700;
 }
