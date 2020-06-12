@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #0097a7;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  position: relative;
+  background: #000000;
+}
+
+body::after {
+  content: "";
+  animation: noise 1s steps(10) infinite;
+  background-image: url(../images/noise.png);
+  height: 300%;
+  width: 300%;
+  position: fixed;
+  top: -100%;
+  left: -50%;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+#about, #tools, #portfolio { 
+  padding: 5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a:hover {
+  color: #f65252;
+  transition: 0.25s ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
