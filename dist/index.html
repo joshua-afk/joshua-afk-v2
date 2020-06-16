@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,13 +32,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
 
   <!-- stylesheets -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" type="text/css" media="all" rel="stylesheet" id="fontawesome-css">
   <link href="styles/app.css" rel="stylesheet">
   </link>
 </head>
-
 <body>
+  <!-- preloader -->
+  <section id="preloader">
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
 
   <!-- nav/header -->
   <nav class="nav-transparent" id="nav">
@@ -92,9 +98,9 @@
       <div class="section-header-line"></div>
     </header>
 
-    <div class="container" data-aos="fade-up" data-aos-delay="200">
+    <div class="container">
       <ul class="about-members">
-        <li class="about-member">
+        <li class="about-member" data-aos="fade-up" data-aos-delay="300">
           <figure>
             <img src="" alt="project manager" />
           </figure>
@@ -105,7 +111,7 @@
 
         <li class="d-md-none d-sm-block" style="flex-basis: 100%"></li>
 
-        <li class="about-member">
+        <li class="about-member"  data-aos="fade-up" data-aos-delay="200">
           <figure>
             <img src="" alt="ui-ux designer" />
           </figure>
@@ -121,7 +127,7 @@
           </p>
         </li>
 
-        <li class="about-member">
+        <li class="about-member" data-aos="fade-up" data-aos-delay="400">
           <figure>
             <img src="" alt="back-end developer" />
           </figure>
@@ -134,13 +140,13 @@
         </li>
       </ul>
 
-      <blockquote class="about-quote" style="margin-bottom: 2rem; font-style: normal;">
+      <blockquote class="about-quote" style="margin-bottom: 2rem; font-style: normal;" data-aos="fade-up" data-aos-delay="500">
         I am Joshua Ryan Velasquez a Full-Stack Web Developer Based in Pasay City, Philippines.
         I am specialized in back-end development. Proficient at working independently and also a team player.
         I am highly experienced at different stages of Development cycle for static and dynamic projects.
       </blockquote>
 
-      <blockquote class="about-quote" style="font-weight: 600">
+      <blockquote class="about-quote" style="font-weight: 600" data-aos="fade-up" data-aos-delay="600">
         "I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be
         taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting
         things that matter."
@@ -150,11 +156,11 @@
 
   <!-- tools -->
   <section id="tools">
-    <header class="about-header" data-aos="fade-up" data-aos-delay="500">
+    <header class="about-header" data-aos="fade-up" data-aos-delay="700">
       <h2 class="section-header">Tools</h2>
       <div class="section-header-line"></div>
-    </header>
 
+    </header>
     <div class="container">
       <ul class="tools-icon-wrapper">
         <li class="tools-icon-container">
@@ -483,10 +489,19 @@
     </div>
   </footer>
 
+
+  <!-- particle js -->
   <script src="vendors/particles.js-master/particles.min.js"></script>
   <script src="vendors/particles.js-master/demo/js/app.js"></script>
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- fontawesome -->
   <script type="text/javascript" src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" defer="" '=""></script>
+
+  <!-- custom scripts -->
+  <script src="scripts/preloader.js"></script>
   <script src="scripts/typewriter-effect.js"></script>
   <script src="scripts/app.js"></script>
 </body>
