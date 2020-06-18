@@ -1,25 +1,24 @@
 {
-  "name": "joshua-afk-v2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "deploy": "gh-pages -d dist",
-    "compile:style": "sass --watch scss/app.scss dist/styles/app.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshua-afk/joshua-afk-v2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://joshua-afk.github.io/joshua-afk-v2",
-  "bugs": {
-    "url": "https://github.com/joshua-afk/joshua-afk-v2/issues"
-  },
-  "homepage": "https://github.com/joshua-afk/joshua-afk-v2#readme",
-  "dependencies": {
-    "gh-pages": "^2.2.0"
-  }
+    "name": "joshua-afk-v2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "gh-pages -d dist",
+        "compile:css": "sass --watch scss/app.scss dist/styles/app.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joshua-afk/joshua-afk.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://joshua-afk.github.io/issues"
+    },
+    "homepage": "https://joshua-afk.github.io",
+    "dependencies": {
+        "gh-pages": "^3.0.0"
+    }
 }
