@@ -29,7 +29,7 @@ class TypeWriter {
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
         // Init Type Speed
-        let typeSpeed = 150;
+        let typeSpeed = 250;
 
         if (this.isDeleting) {
             typeSpeed /= 2;
@@ -38,7 +38,7 @@ class TypeWriter {
         // If word is complete 
         if (!this.isDeleting && this.txt === fullTxt) {
             // Make pause at end of word
-            typeSpeed = this.wait;
+            typeSpeed = 3000;
             // Set delete to true
             this.isDeleting = true;
         } else if (this.isDeleting && this.txt === '') {
