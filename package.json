@@ -1,0 +1,20 @@
+{
+    "name": "joshua-afk-v2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:css": "sass --watch scss/app.scss dist/styles/app.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joshua-afk/joshua-afk.github.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/joshua-afk/joshua-afk.github.io/issues"
+    },
+    "homepage": "https://joshua-afk.github.io"
+}

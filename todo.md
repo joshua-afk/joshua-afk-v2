@@ -10,13 +10,18 @@
 > npm run deploy
 > should do the trick
 
+> contact section is removed. should do it again :'(
+> resize the images again :'(
+> do the coding at the development branch
+> try to root the dist at test branch
+> if success do it also at the master branch
+
 * contact text at the bottom of projects
 
 - preloader
 - navbar collapse
 - show more animation
 - implement sass
-
 
 * aos
 
