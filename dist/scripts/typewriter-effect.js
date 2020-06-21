@@ -29,10 +29,10 @@ class TypeWriter {
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
         // Init Type Speed
-        let typeSpeed = 250;
+        let typeSpeed = 300;
 
         if (this.isDeleting) {
-            typeSpeed /= 2;
+            typeSpeed /= 3;
         }
 
         // If word is complete 
@@ -46,7 +46,7 @@ class TypeWriter {
             // Move to the next word
             this.wordIndex++;
             // Pause before start typing
-            typeSpeed = 500;
+            typeSpeed = 1000;
         }
 
         setTimeout(() => this.type(), typeSpeed);
