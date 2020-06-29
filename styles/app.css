@@ -609,6 +609,18 @@ footer .nav-icon:hover {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+.footer-link a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #000000;
+  transition: width 0.5s;
+}
+.footer-link a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
 
 .footer-links-right .footer-link a {
   color: #808080;
