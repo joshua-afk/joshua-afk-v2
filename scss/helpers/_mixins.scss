@@ -1,0 +1,13 @@
+@mixin font-face-ttf($family, $path){
+	@font-face{
+		font-family: $family;
+		src: url('#{$path}.ttf');
+	}
+}
+
+@mixin font-face-otf($family, $path){
+	@font-face{
+		font-family: $family;
+		src: url('#{$path}.otf');
+	}
+}
